@@ -1,0 +1,471 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.page {
+    max-width: 2540px; 
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    width: 100%;
+    min-height: 800px; 
+    position: relative; 
+    background: 
+        url('images/image-header.svg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header::before {
+    content: "";
+    background-image: url(images/Background\ header.svg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+
+.nav-container {
+    width: 100%; 
+    max-width: 1070px; 
+    height: 54px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 53px 15px; 
+}
+
+.logo img {
+    width: 221px;
+    height: 44px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+
+
+.menu-ellipse {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.menu-ellipse.active {
+    background-color: #FFFFFF;
+
+}
+
+.menu a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.6px;
+    text-align: left;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: #55B7FF;
+}
+
+.menu-ellipse:hover,
+.menu-ellipse:focus {
+    background-color: #FFFFFF;
+}
+
+.social-icons ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover,
+.social-icons img:focus {
+    transform: scale(1.1);
+}
+
+
+.heading-text {
+    width: 100%;
+    max-width: 919px;
+    position: absolute;
+    top: 290px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 97.52px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subheading-text {
+    width: 100%;
+    max-width: 614.34px;
+    position: absolute;
+    top: 390px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.arrow-container {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow-container img {
+    width: 15px;
+    height: 15px;
+}
+
+.arrow-container:hover,
+.arrow-container:focus {
+    transform: scale(1.2);
+}
+
+.dots-container {
+    width: 10px;
+    position: absolute;
+    top: 270px;
+    right: 60px; /* Смещение от правого края */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 15;
+    background: transparent;
+}
+
+.dot {
+    margin-bottom: 60px;
+}
+
+.ellipse {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ellipse.active {
+    background-color: #FFFFFF;
+}
+
+.ellipse:hover,
+.ellipse:focus {
+    background-color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    position: relative;
+    background-color: #ffffff;
+}
+
+
+.projects-title {
+    width: 100%;
+    max-width: 324px;
+    height: 84px;
+    margin: 0 auto 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Линия над текстом */
+.projects-line {
+    width: 100px;
+    height: 0;
+    border-top: 1px solid #2C4058;
+    margin-bottom: 10px; /* Отступ снизу */
+    align-self: center;
+}
+
+/* Текст заголовка */
+.projects-text {
+    width: 100%;
+    max-width: 324px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53.64px;
+    text-align: center;
+    color: #2C4058;
+    padding-top: 0px;
+}
+
+
+.projects-content {
+    width: 100%;
+    max-width: 1385px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+/* Секция с изображениями */
+.project-images {
+    width: 845px;
+    height: 527px;
+    position: relative;
+    margin-top: -40px;
+}
+
+.image-1 {
+    width: 100%;
+    max-width: 630px;
+    height: 470px;
+    position: absolute;
+    top: 57px;
+    left: 0;
+}
+
+.image-1 img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.image-2 {
+    width: 100%;
+    max-width: 585px;
+    height: 470px;
+    position: absolute;
+    top: 100px;
+    left: 260px;
+}
+
+.image-2 img {
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    margin-left: -80px;
+}
+
+/* Секция с текстовой информацией о проекте */
+.project-details {
+    width: 100%;
+    max-width: 470px;
+    height: 350px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.project-detail-text {
+    margin-bottom: 20px;
+}
+
+.detail-title-small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #2C4058;
+    margin-bottom: 10px;
+}
+
+.detail-title-large {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: #2C4058;
+    margin-bottom: 20px;
+}
+
+.detail-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #2C4058;
+}
+
+/* Кнопка More Details */
+.more-details-button {
+    margin-top: 40px;
+}
+
+.details-btn {
+    width: 190px;
+    height: 50px;
+    border: 1px solid #2C4058;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: #2C4058;
+    color: #FFFFFF;
+}
+
+.projects-content .more-details-button {
+    position: relative;
+    z-index: 10; 
+    margin-top: 40px;
+}
+
+
+/* Информация о местоположении */
+.location-info {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+.location-icon {
+    width: 9px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.location-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20.43px;
+    color: #000000;
+}
+
+}
+.location-text a {
+    text-decoration: none;
+}
+
+.location-text a:visited {
+    text-decoration: none;
+}
+
+.location-text a:hover {
+    cursor: pointer;
+}
+
+/* Стиль для Project Content 2 */
+.projects-content-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 0; /* Центрирование и отступ сверху */
+    max-width: 1385px;
+    padding-top: 60px;
+}
+
+.projects-content-2 .project-details {
+    text-align: left;
+}
+
+.projects-content-2 .location-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projects-content-2 .location-icon {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.projects-content-2 .image-2 {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+.projects-content-2 .image-1 {
+    position: absolute;
+    top: 57px;
+    left: 220px;
+
+}
+
+
+.header-container {
+    max-width: 1170px ;
+    height: 54px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 53px ;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.navigation-menu {
+    list-style-type: circle;
+display: inline;
+}

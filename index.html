@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <title>Monticello</title>
 </head>
 <body>
@@ -68,20 +69,14 @@
             <div class="arrow-container">
                 <img src="additions/arrow.svg" alt="Arrow Down" />
             </div>
-             <div class="dots-container">
-                <div class="dot">
-                    <div class="ellipse"></div>
-                </div>
-                <div class="dot">
-                    <div class="ellipse"></div>
-                </div>
-                <div class="dot">
-                    <div class="ellipse"></div>
-                </div>
-                <div class="dot">
-                    <div class="ellipse"></div>
-                </div>
-            </div>
+               <div class="dots-container">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dot"></div>
         </header>
         <div class="projects-container">
             <div class="projects-title">
@@ -91,10 +86,10 @@
             <div class="projects-content">
                 <div class="project-images">
                     <div class="image-1">
-                        <img src="additions/Rectangle 3.svg" alt="Project Image 1" />
+                        <img src="additions/Rectangle 3.svg" alt="Project1" />
                     </div>
                     <div class="image-2">
-                        <img src="images/JoelFilipe.svg" alt="Project Image 2" />
+                        <img src="images/JoelFilipe.svg" alt="Project2" />
                     </div>
                 </div>
                 <div class="project-details">
@@ -139,15 +134,177 @@
                 </div>
                 <div class="project-images">
                     <div class="image-1">
-                        <img src="images/Rectangle32.svg" alt="Project Image 1" />
+                        <img src="images/Rectangle32.svg" alt="Project 1" />
                     </div>
                     <div class="image-2">
-                        <img src="images/BuildingBrown.svg" alt="Project Image 2" />
+                        <img src="images/BuildingBrown.svg" alt="Project 2" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+     
+      <div class="news-container">
+       
+        <div class="slider-arrow left-arrow">
+          <img src="additions/Leftarrow.svg" alt="Left Arrow" />
+        </div>
+
+        
+        <div class="news-title">
+          <div class="news-line"></div>
+          <div class="news-text">LATEST NEWS</div>
+        </div>
+
+        <div class="articles-container">
+        
+          <div class="article">
+            <div class="article-image">
+              <img src="images/Image1.svg" alt="Article1" />
+            </div>
+            <div class="article-title">
+              SEE THE UNMATCHED BEAUTY OF THE GREAT.
+            </div>
+            <div class="article-description">
+              Free directories: directories are perfect for customers that are
+              searching for...
+            </div>
+            <div class="article-author">
+              <div class="author-image">
+                <img src="additions/author.svg" alt="Author1" />
+              </div>
+              <div class="author-info">
+                <div class="author-name">ALJA BRUN</div>
+                <div class="author-date">20 Jan 2020</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="article">
+            <div class="article-image">
+              <img src="images/Image2.svg" alt="Article 2" />
+            </div>
+            <div class="article-title">EFFECTIVE ADVERTISING POINTERS.</div>
+            <div class="article-description">
+              Having a home based business is a wonderful asset to your life...
+            </div>
+            <div class="article-author">
+              <div class="author-image">
+                <img src="additions/author2.svg" alt="author2" />
+              </div>
+              <div class="author-info">
+                <div class="author-name">DOMINIC FREEMAN</div>
+                <div class="author-date">13 Dec 2019</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="article">
+            <div class="article-image">
+              <img src="images/Image3.svg" alt="Article3" />
+            </div>
+            <div class="article-title">HYPNOTIZE YOURSELF INTO THE GHOST.</div>
+            <div class="article-description">
+              There are many things that are important to catalog design...
+            </div>
+            <div class="article-author">
+              <div class="author-image">
+                <img src="additions/author3.svg" alt="author3" />
+              </div>
+              <div class="author-info">
+                <div class="author-name">ALICE WARD</div>
+                <div class="author-date">30 Nov 2019</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-arrow right-arrow">
+          <img src="additions/Rightarrow.svg" alt="Right Arrow" />
+        </div>
+
+       
+        <div class="slider-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    <div class="gallery-container">
+      <div class="gallery-title">
+        <div class="gallery-line"></div>
+        <div class="gallery-text">GALLERY</div>
+      </div>
+      <div class="gallery-images">
+        <div class="gallery-image large-image">
+          <img
+            src="images/scott-webb-176434 1.svg"
+            alt="Gallery1"
+          />
+        </div>
+        <div class="gallery-small-images">
+          <div class="gallery-image small-image">
+            <img
+              src="images/photos-13323p6Bdc0uhr8Bq 1.svg"
+              alt="Gallery2"
+            />
+          </div>
+          <div class="gallery-image small-image">
+            <img
+              src="images/fuse-brussels-169216 1.svg"
+              alt="Gallery3"
+            />
+          </div>
+        </div>
+        <div class="gallery-small-images">
+          <div class="gallery-image small-image">
+            <img
+              src="images/echo-grid-156713 1.svg"
+              alt="Gallery4"
+            />
+          </div>
+          <div class="gallery-image small-image">
+            <img
+              src="images/image-header.svg"
+              alt="Gallery5"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="gallery-button">
+        <button class="see-more-btn">SEE MORE</button>
+      </div>
+      <div class="contact-container">
+        <div id="map" style="width: 100%; height: 500px;"></div>
+        <div class="contact-form-container">
+            <h2 class="contact-title">GET IN TOUCH</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt custom-icon"></i> 91 Nolan Extensions Suite 670</p>
+                    <p><i class="fas fa-phone-alt custom-icon"></i> +001 356-868-2454</p>
+                    <p><i class="fas fa-envelope custom-icon"></i> montichello@service.com</p>
+                    <p><i class="fas fa-clock custom-icon"></i> From 07:05AM to 19:30PM</p>
+                </div>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="input-field" value="Mollie Medina" />
+                        <hr>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="input-field" placeholder="Email" />
+                        <hr>
+                    </div>
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

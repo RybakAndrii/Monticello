@@ -1,4 +1,3 @@
-/* Основные стили */
 body {
     margin: 0;
     padding: 0;
@@ -8,33 +7,45 @@ body {
 }
 
 .page {
-    max-width: 100%;
+    max-width: 2540px; 
     margin: 0 auto;
-    padding: 0 15px;
     position: relative;
+    z-index: 1;
 }
 
-/* Хедер */
 .header {
     width: 100%;
-    min-height: 800px;
-    position: relative;
+    min-height: 800px; 
+    position: relative; 
     background: 
-        linear-gradient(200.43deg, rgba(126, 90, 255, 0.5) 16.9%, rgba(85, 183, 255, 0.5) 83.27%),
-        url('img/45.jpeg') no-repeat center center;
+        url('images/image-header.svg') no-repeat center center;
     background-size: cover;
+    z-index: -1;
 }
 
-/* Навигация */
+.header::before {
+    content: "";
+    background-image: url(images/Background\ header.svg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+
 .nav-container {
-    width: 100%;
-    max-width: 1070px;
+    width: 100%; 
+    max-width: 1070px; 
     height: 54px;
-    margin: 0 auto;
+    margin: 0 auto; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 53px 15px;
+    padding: 53px 15px; 
 }
 
 .logo img {
@@ -55,6 +66,8 @@ body {
     margin-right: 40px;
 }
 
+
+
 .menu-ellipse {
     width: 8px;
     height: 8px;
@@ -68,6 +81,7 @@ body {
 
 .menu-ellipse.active {
     background-color: #FFFFFF;
+
 }
 
 .menu a {
@@ -113,12 +127,12 @@ body {
     transform: scale(1.1);
 }
 
-/* Заголовок и подзаголовок */
+
 .heading-text {
     width: 100%;
     max-width: 919px;
     position: absolute;
-    top: 290px;
+    top: 290px; 
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Montserrat', sans-serif;
@@ -134,7 +148,7 @@ body {
     width: 100%;
     max-width: 614.34px;
     position: absolute;
-    top: 390px;
+    top: 390px; 
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Montserrat', sans-serif;
@@ -146,21 +160,20 @@ body {
     color: #FFFFFF;
 }
 
-/* Стрелка */
+
 .arrow-container {
     width: 30px;
     height: 30px;
     position: absolute;
     bottom: 50px;
     left: 50%;
-    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .arrow-container img {
@@ -170,15 +183,14 @@ body {
 
 .arrow-container:hover,
 .arrow-container:focus {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
-/* Контейнер точек (Dots) в хедере */
 .dots-container {
     width: 10px;
     position: absolute;
     top: 270px;
-    right: 60px;
+    right: 60px; /* Смещение от правого края */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -211,7 +223,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Контейнер Projects */
 .projects-container {
     width: 100%;
     max-width: 1200px;
@@ -220,12 +231,12 @@ body {
     background-color: #ffffff;
 }
 
-/* Контейнер Title */
+
 .projects-title {
     width: 100%;
     max-width: 324px;
     height: 84px;
-    margin: 0 auto 20px;
+    margin: 0 auto 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,7 +248,7 @@ body {
     width: 100px;
     height: 0;
     border-top: 1px solid #2C4058;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Отступ снизу */
     align-self: center;
 }
 
@@ -254,7 +265,7 @@ body {
     padding-top: 0px;
 }
 
-/* Контент внутри секции Projects */
+
 .projects-content {
     width: 100%;
     max-width: 1385px;
@@ -365,16 +376,16 @@ body {
 
 .projects-content .more-details-button {
     position: relative;
-    z-index: 10;
+    z-index: 10; 
     margin-top: 40px;
 }
+
 
 /* Информация о местоположении */
 .location-info {
     margin-top: 30px;
     display: flex;
     align-items: center;
-}
 
 .location-icon {
     width: 9px;
@@ -391,11 +402,24 @@ body {
     color: #000000;
 }
 
+}
+.location-text a {
+    text-decoration: none;
+}
+
+.location-text a:visited {
+    text-decoration: none;
+}
+
+.location-text a:hover {
+    cursor: pointer;
+}
+
 /* Стиль для Project Content 2 */
 .projects-content-2 {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto 0;
+    margin: 20px auto 0; /* Центрирование и отступ сверху */
     max-width: 1385px;
     padding-top: 60px;
 }
@@ -416,15 +440,36 @@ body {
 
 .projects-content-2 .image-2 {
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 150px;
 }
 
 .projects-content-2 .image-1 {
     position: absolute;
-    top: 90px;
+    top: 57px;
     left: 220px;
+
 }
+
+
+.header-container {
+    max-width: 1170px ;
+    height: 54px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 53px ;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.navigation-menu {
+    list-style-type: circle;
+display: inline;
+}
+
 
 /* News Container */
 .news-container {

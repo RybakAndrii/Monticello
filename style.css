@@ -471,7 +471,7 @@ display: inline;
 }
 
 
-/* News Container */
+
 .news-container {
     position: relative;
     width: 100vw;
@@ -488,7 +488,7 @@ display: inline;
     overflow: hidden;
 }
 
-/* Title Section */
+
 .news-title {
     width: 327px;
     height: 84px;
@@ -512,7 +512,7 @@ display: inline;
     margin-top: 25px;
 }
 
-/* Articles Section */
+
 .articles-container {
     display: flex;
     justify-content: space-between;
@@ -637,7 +637,7 @@ display: inline;
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Секция для индикаторов Dots */
+
 .slider-dots {
     width: 210px;
     height: 10px;
@@ -671,7 +671,7 @@ display: inline;
     box-sizing: border-box;
 }
 
-/* Gallery Container */
+
 .gallery-container {
     width: 1170px;
     margin: 0 auto;
@@ -702,19 +702,19 @@ display: inline;
 .gallery-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Центрирует изображения */
-    gap: 20px; /* Устанавливает одинаковое расстояние между изображениями */
+    justify-content: center; 
+    gap: 20px; 
 }
 .large-image {
     width: 580px;
     height: 438px;
-    margin-bottom: 20px; /* Отступ снизу для равномерного расположения */
+    margin-bottom: 20px; 
 }
 
 .small-image {
     width: 285px;
     height: 214px;
-    margin-bottom: 10px; /* Отступ снизу для равномерного расположения */
+    margin-bottom: 10px; 
 }
 
 .gallery-image img {
@@ -725,8 +725,8 @@ display: inline;
 
 .gallery-button {
     text-align: center;
-    margin-top: -140px; /* Увеличен отступ сверху */
-    padding-bottom: 60px; /* Добавлен отступ снизу */
+    margin-top: -140px; 
+    padding-bottom: 60px; 
 }
 
 .see-more-btn {
@@ -749,10 +749,10 @@ display: inline;
 
 .gallery-images {
     display: grid;
-    grid-template-columns: 580px 285px 285px; /* Колонки для крупного и двух мелких изображений */
-    grid-template-rows: 438px 214px; /* Строки для крупного и мелких изображений */
-    grid-gap: 20px; /* Расстояние между изображениями */
-    justify-content: center; /* Центрирование по горизонтали */
+    grid-template-columns: 580px 285px 285px; 
+    grid-template-rows: 438px 214px; 
+    grid-gap: 20px; 
+    justify-content: center; 
     margin: 0 auto;
 }
 
@@ -782,7 +782,8 @@ display: inline;
 }
 
 .contact-container {
-    position: relative; /* Родительский контейнер должен иметь position: relative */
+    position: relative; 
+    max-width: 2440px;
     width: 100%;
     height: 500px;
 }
@@ -798,16 +799,17 @@ display: inline;
     height: 450px;
     padding: 20px;
     position: absolute;
-    top: 50%; /* Центрирование по вертикали */
-    left: 50%; /* Центрирование по горизонтали */
-    transform: translate(-50%, -50%); /* Центрирование */
-    background: url('img/222.svg') no-repeat center center;/* Убедитесь, что путь к изображению корректен */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background: url('additions/222.svg') no-repeat center center;
     background-size: cover;
+    background-color: #ffffff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid #2C4058;
     z-index: 1000;
-    opacity: 0; /* Изначально скрыто */
-    visibility: hidden; /* Изначально скрыто */
+    opacity: 0;
+    visibility: hidden; 
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
     .contact-title {
@@ -829,7 +831,7 @@ display: inline;
 
     .contact-info {
         width: 50%;
-        font-family: 'FontAwesome', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 18px;
         font-weight: 400;
         line-height: 28px;
@@ -918,3 +920,45 @@ display: inline;
         background-color: #7E5AFF;
         border-radius: 50%;
     }
+
+
+    .footer-container {
+        width: 100%;
+        height: 549px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        background-color: #2C4058;
+    }
+     
+
+
+
+    .socials-section ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.socials-section li {
+    margin-right: 10px;
+  
+}
+
+.socials-section img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.socials-section img:hover,
+.socials-section img:focus {
+    transform: scale(1.1);
+}
+
+
+
+

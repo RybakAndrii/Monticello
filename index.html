@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-   
-     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -30,6 +26,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="slick.css" />
    <link rel="stylesheet" href="style.css" />
     <title>Monticello</title>
     <script
@@ -180,10 +177,10 @@
         <div class="news-line"></div>
         <div class="news-text">LATEST NEWS</div>
       </div>
-      <div class="slider-arrow left-arrow">
+      <!-- <div class="slider-arrow left-arrow">
         <img src="additions/Leftarrow.svg" alt="Left Arrow" />
-      </div>
-      <div class="slider-right"> 
+      </div> -->
+      <div class="slider"> 
       <div class="articles-container">
         
         <div class="article">
@@ -207,7 +204,6 @@
             </div>
           </div>
         </div>
-
         <div class="article">
           <div class="article-image">
             <img src="images/Image2.svg" alt="Article 2" />
@@ -246,17 +242,9 @@
         </div>
       </div>
       <div class="slider-arrow right-arrow">
-        <img src="additions/Rightarrow.svg" alt="Right Arrow" />
       </div>
 </div>
-      <div class="slider-dots">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-    </div>
+</div>
     <div class="gallery-container">
       <div class="gallery-title">
         <div class="gallery-line"></div>
@@ -267,18 +255,18 @@
           <img src="images/scott-webb-176434 1.svg" alt="Gallery1" />
         </div>
         <div class="gallery-small-images">
-          <div class="gallery-image small-image">
+          <div class="gallery-image small-image-1">
             <img src="images/photos-13323p6Bdc0uhr8Bq 1.svg" alt="Gallery2" />
           </div>
-          <div class="gallery-image small-image">
+          <div class="gallery-image small-image-2">
             <img src="images/fuse-brussels-169216 1.svg" alt="Gallery3" />
           </div>
         </div>
         <div class="gallery-small-images">
-          <div class="gallery-image small-image">
+          <div class="gallery-image small-image-3">
             <img src="images/echo-grid-156713 1.svg" alt="Gallery4" />
           </div>
-          <div class="gallery-image small-image">
+          <div class="gallery-image small-image-4">
             <img src="images/image-header.svg" alt="Gallery5" />
           </div>
         </div>
@@ -354,12 +342,11 @@
     </footer>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="index.js"></script>
-    <script src="header.js"></script>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="slick.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/slick.min.js"></script>
+  <script type="text/javascript" src="/js/news.js"></script>
 
   </body>
 </html>

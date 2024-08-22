@@ -7,7 +7,7 @@ body {
 }
 
 .page {
-    max-width: 2540px; 
+    max-width: 2440px; 
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -518,15 +518,18 @@ display: inline;
 
 .articles-container {
     display: flex;
-    justify-content: space-between;
-    gap: 1px;
+    justify-content: center;
+    gap: 30px;
     margin-top: 50px;
-    padding: 0 170px;
+    padding-left: 0 170px;
+    min-width: 0;
+    flex-grow:1 ;
 }
 
 .article {
     width: 340px;
     height: 514px;
+    min-width: 0;
     border: 1px solid #FFFFFF;
     background-color: #ffffff;
     display: flex;
@@ -607,77 +610,13 @@ display: inline;
     margin-top: 10px;
 }
 
-/* Стрелки слайдера */
-.slider-arrow {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #FFFFFF;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
 
-.left-arrow {
-    left: 70px;
-}
-
-.right-arrow {
-    right: 70px;
-}
-
-.slider-arrow img {
-    width: 40px;
-    height: 40px;
-}
-
-.slider-arrow:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-/* Секция для индикаторов Dots */
-.slider-dots {
-    width: 210px;
-    height: 10px;
-    margin: 30px auto 0 auto;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 5;
-    margin-top: 70px;
-}
-
-.dot {
-    width: 15px;
-    height: 15px;
-    border: 1px solid #FFFFFF;
-    border-radius: 50%;
-    background-color: transparent;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dot.active {
-    background-color: #FFFFFF;
-}
-
-.dot:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-*, *:before, *:after {
-    box-sizing: border-box;
-}
 
 /* Gallery Container */
 .gallery-container {
     width: 1170px;
     margin: 0 auto;
+    z-index: 40;
 }
 
 .gallery-title {
@@ -703,21 +642,39 @@ display: inline;
 }
 
 .gallery-images {
-    display: flex;
+    display: flex grid ;
     flex-wrap: wrap;
-    justify-content: center; /* Центрирует изображения */
-    gap: 20px; /* Устанавливает одинаковое расстояние между изображениями */
+    justify-content: center;
+    gap: 20px; 
+     transition: transform .5s ease-in-out;
+     
 }
+
+.gallery-image:hover {
+   transform: scale(1.5);
+   cursor: pointer;
+}
+
+
+
+
 .large-image {
     width: 580px;
     height: 438px;
-    margin-bottom: 20px; /* Отступ снизу для равномерного расположения */
+    margin-bottom: 20px; 
+}
+
+
+.large-image:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    
 }
 
 .small-image {
     width: 285px;
     height: 214px;
-    margin-bottom: 10px; /* Отступ снизу для равномерного расположения */
+    margin-bottom: 10px; 
 }
 
 .gallery-image img {
@@ -728,8 +685,8 @@ display: inline;
 
 .gallery-button {
     text-align: center;
-    margin-top: -140px; /* Увеличен отступ сверху */
-    padding-bottom: 60px; /* Добавлен отступ снизу */
+    margin-top: -140px; 
+    padding-bottom: 60px; 
 }
 
 .see-more-btn {
@@ -752,10 +709,10 @@ display: inline;
 
 .gallery-images {
     display: grid;
-    grid-template-columns: 580px 285px 285px; /* Колонки для крупного и двух мелких изображений */
-    grid-template-rows: 438px 214px; /* Строки для крупного и мелких изображений */
-    grid-gap: 20px; /* Расстояние между изображениями */
-    justify-content: center; /* Центрирование по горизонтали */
+    grid-template-columns: 580px 285px 285px; 
+    grid-template-rows: 438px 214px; 
+    grid-gap: 20px; 
+    justify-content: center; 
     margin: 0 auto;
 }
 

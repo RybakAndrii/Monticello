@@ -516,18 +516,14 @@ display: inline;
     margin-top: 25px !important;
 }
 
-
-/* Контейнер для статей */
 .articles-container {
     display: flex;
     justify-content: space-between;
     gap: 1px;
     margin-top: 50px;
     padding: 0 170px;
-    position: relative;
 }
 
-/* Стили для каждой статьи */
 .article {
     width: 340px;
     height: 514px;
@@ -535,16 +531,13 @@ display: inline;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Равномерное распределение */
-    padding: 20px; /* Внутренние отступы */
-    box-sizing: border-box; /* Учет padding в размере */
+    gap: 20px;
 }
 
-/* Изображение статьи */
 .article-image {
     width: 100%;
     height: 240px;
-    overflow: hidden; /* Обрезка изображения */
+    margin: 0;
 }
 
 .article-image img {
@@ -554,31 +547,30 @@ display: inline;
     display: block;
 }
 
-/* Заголовок статьи */
 .article-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     font-weight: 700;
     line-height: 26.82px;
     color: #2C4058;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 20px;
 }
 
-/* Описание статьи */
 .article-description {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.51px;
     color: #2C4058;
-    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 20px;
 }
 
-/* Информация об авторе */
 .article-author {
     display: flex;
     align-items: center;
+    margin-left: 20px;
 }
 
 .author-image {
@@ -602,6 +594,7 @@ display: inline;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    line-height: 21.94px;
     color: #2C4058;
 }
 
@@ -609,8 +602,9 @@ display: inline;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    line-height: 17.07px;
     color: #55B7FF;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 /* Стрелки слайдера */
@@ -627,71 +621,142 @@ display: inline;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .left-arrow {
-    left: -50px; /* Слева от контейнера */
+    left: 70px;
 }
 
 .right-arrow {
-    right: -50px; /* Справа от контейнера */
+    right: 70px;
 }
 
 .slider-arrow img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
-/* Точки слайдера */
-.slick-dots {
+.slider-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Секция для индикаторов Dots */
+.slider-dots {
+    width: 210px;
+    height: 10px;
+    margin: 30px auto 0 auto;
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+    margin-top: 70px;
 }
 
-.slick-dots li {
-    margin: 0 5px;
-}
-
-.slick-dots button {
+.dot {
     width: 15px;
     height: 15px;
+    border: 1px solid #FFFFFF;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid #FFFFFF;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.slick-dots .slick-active button {
+.dot.active {
     background-color: #FFFFFF;
 }
 
-/* Устраняем дефолтные стили от Slick */
-.slick-slide {
-    display: flex;
-    justify-content: center;
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.slick-list {
-    overflow: hidden;
-}
-
-/* Общие стили */
 *, *:before, *:after {
     box-sizing: border-box;
 }
 
+/* Gallery Container */
+.gallery-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gallery-line {
+    width: 100px;
+    height: 1px;
+    background-color: #2C4058;
+    margin: 0 auto 10px auto;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.gallery-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: #2C4058;
+    margin-bottom: 50px;
+}
 
 .gallery-images {
-    display: grid !important;
-    grid-template-columns: 580px 285px 285px ; 
-    grid-template-rows: 438px 214px !important;  
-    grid-gap: 20px!important; 
-    justify-content: center !important; 
-    margin: 0 auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрирует изображения */
+    gap: 20px; /* Устанавливает одинаковое расстояние между изображениями */
+}
+.large-image {
+    width: 580px;
+    height: 438px;
+    margin-bottom: 20px; /* Отступ снизу для равномерного расположения */
+}
+
+.small-image {
+    width: 285px;
+    height: 214px;
+    margin-bottom: 10px; /* Отступ снизу для равномерного расположения */
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-button {
+    text-align: center;
+    margin-top: -140px; /* Увеличен отступ сверху */
+    padding-bottom: 60px; /* Добавлен отступ снизу */
+}
+
+.see-more-btn {
+    width: 190px;
+    height: 50px;
+    border: 1px solid #2C4058;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background-color: #2C4058;
+    color: #FFFFFF;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: 580px 285px 285px; /* Колонки для крупного и двух мелких изображений */
+    grid-template-rows: 438px 214px; /* Строки для крупного и мелких изображений */
+    grid-gap: 20px; /* Расстояние между изображениями */
+    justify-content: center; /* Центрирование по горизонтали */
+    margin: 0 auto;
 }
 
 .large-image {
@@ -720,8 +785,7 @@ display: inline;
 }
 
 .contact-container {
-    position: relative; 
-    max-width: 2440px;
+    position: relative; /* Родительский контейнер должен иметь position: relative */
     width: 100%;
     height: 500px;
 }

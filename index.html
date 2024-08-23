@@ -25,6 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" type="text/css" href="slick.css" />
    <link rel="stylesheet" href="style.css" />
@@ -104,6 +105,7 @@
           <div class="projects-text">WHAT WE DO</div>
         </div>
         <div class="projects-content">
+          <div data-aos="fade-down"> 
           <div class="project-images">
             <div class="image-1">
               <img src="additions/Rectangle 3.svg" alt="Project1" />
@@ -112,6 +114,8 @@
               <img src="images/JoelFilipe.svg" alt="Project2" />
             </div>
           </div>
+        </div>
+        <div data-aos="zoom-in-up">
           <div class="project-details">
             <div class="project-detail-text">
               <div class="detail-title-small">ONE WORLD</div>
@@ -137,6 +141,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div data-aos="zoom-in-down" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
         <div class="projects-content-2">
           <div class="project-details">
             <div class="project-detail-text">
@@ -161,6 +168,8 @@
             </div>
           </div>
           <div class="project-images">
+            <div  data-aos="fade-up" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
             <div class="image-1">
               <img src="images/Rectangle32.svg" alt="Project 1" />
             </div>
@@ -170,6 +179,8 @@
           </div>
         </div>
       </div>
+      </div>
+    </div>
     </div>
 
     <div class="news-container">
@@ -275,7 +286,7 @@
         <button class="see-more-btn">SEE MORE</button>
       </div>
       <div class="contact-container">
-        <div id="map" style="width: 100%; height: 500px"></div>
+        <div id="map" style="width:100%; height: 500px"></div>
         <div class="contact-form-container">
           <h2 class="contact-title">GET IN TOUCH</h2>
           <div class="contact-content">
@@ -318,6 +329,8 @@
       </div>
     </div>
     <footer class="footer">
+      <div data-aos="fade-up" data-aos-duration="500"
+    data-aos-easing="ease-in-out">
       <div class="footer-container">
         <div class="footer-logo">
           <img src="logo/Logo.svg" alt="Logo" />
@@ -339,6 +352,7 @@
           </ul>
         </div>
       </div>
+      </div>
     </footer>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -347,6 +361,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/slick.min.js"></script>
     <script type="text/javascript" src="/js/news.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+      AOS.init();
+    </script>
 
   </body>
 </html>

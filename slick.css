@@ -16,7 +16,6 @@
 .slick-track{
     display: flex;
     min-width: 0;
-    align-items: center;
 }
 
 /* Слайд */
@@ -88,6 +87,8 @@ background: url('additions/Rightarrow.svg')0 0 / 100% no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
 }
 
 .slider .slick-dots li{

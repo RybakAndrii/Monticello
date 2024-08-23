@@ -46,25 +46,25 @@
               <li>
                 <div class="menu-item">
                   <div class="menu-ellipse"></div>
-                  <a href="#">ABOUT US</a>
+                  <a href="#" onclick="scrollToSection('projects-container')" >ABOUT US</a>
                 </div>
               </li>
               <li>
                 <div class="menu-item">
                   <div class="menu-ellipse"></div>
-                  <a href="#">PROJECTS</a>
+                  <a href="#" onclick="scrollToSection('gallery-container')" >PROJECTS</a>
                 </div>
               </li>
               <li>
                 <div class="menu-item">
                   <div class="menu-ellipse"></div>
-                  <a href="#">NEWS</a>
+                  <a href="#" onclick="scrollToSection('news-container')" >NEWS</a>
                 </div>
               </li>
               <li>
                 <div class="menu-item">
                   <div class="menu-ellipse"></div>
-                  <a href="#">CONTACT</a>
+                  <a href="#" onclick="scrollToSection('footer')">CONTACT</a>
                 </div>
               </li>
             </ul>
@@ -88,14 +88,14 @@
         <div class="heading-text">SIMPLE & MODERN</div>
         <div class="subheading-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</div>
         <div class="arrow-container">
-          <img src="additions/arrow.svg" alt="Arrow Down" />
+          <img src="additions/arrow.svg" alt="Scroll Down" class="scroll-button" onclick="scrollToSection('projects-container')">
         </div>
         <div class="dots-container">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+          <div class="dot-menu active"></div>
+          <div class="dot-menu"></div>
+          <div class="dot-menu"></div>
+          <div class="dot-menu"></div>
+          <div class="dot-menu"></div>
         </div>
       </header>
       <div class="projects-container">
@@ -177,12 +177,10 @@
         <div class="news-line"></div>
         <div class="news-text">LATEST NEWS</div>
       </div>
-      <!-- <div class="slider-arrow left-arrow">
-        <img src="additions/Leftarrow.svg" alt="Left Arrow" />
-      </div> -->
+      
       <div class="slider"> 
+        <span></span>
       <div class="articles-container">
-        
         <div class="article">
           <div class="article-image">
             <img src="images/Image1.svg" alt="Article1" />
@@ -241,8 +239,10 @@
           </div>
         </div>
       </div>
-      <div class="slider-arrow right-arrow">
+      <div>
       </div>
+      <span></span>
+      <span></span>
 </div>
 </div>
     <div class="gallery-container">
@@ -344,9 +344,9 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="/js/header.js"></script>
     <script src="/js/index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/slick.min.js"></script>
-  <script type="text/javascript" src="/js/news.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="/js/news.js"></script>
 
   </body>
 </html>

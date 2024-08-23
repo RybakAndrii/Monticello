@@ -177,6 +177,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    
 }
 
 .arrow-container img {
@@ -189,6 +190,7 @@ body {
     transform: scale(1.2);
 }
 
+
 .dots-container {
     width: 10px;
     position: absolute;
@@ -198,12 +200,29 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    z-index: 15;
+    z-index: 20;
     background: transparent;
 }
 
-.dot {
+.dot-menu {
     margin-bottom: 60px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot-menu active {
+    background: #fff;
+}
+
+
+.dot-menu:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .ellipse {
@@ -389,6 +408,7 @@ body {
     margin-top: 30px;
     display: flex;
     align-items: center;
+}
 
 .location-icon {
     width: 9px;

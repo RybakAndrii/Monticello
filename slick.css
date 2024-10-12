@@ -1,0 +1,120 @@
+/* Слайдер */
+.slick-slider{}
+
+/* Слайдер запущений */
+.slick-slider.slick-initialized{}
+
+/* Слайдер з крапками */
+.slick-slider.slick-dotted{}
+
+/* Обмежувальна оболонка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Стрічка слайдів */
+.slick-track{
+    display: flex;
+    min-width: 0;
+}
+
+/* Слайд */
+.slick-slide{}
+
+/* Слайд активний (показується) */
+.slick-slide.slick-active{}
+
+/* Слайд основний */
+.slick-slide.slick-current{}
+
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Клонований слайд */
+.slick-slide.slick-cloned{}
+
+
+
+
+
+
+
+
+/* Стрілка не активна */
+.slick-arrow.slick-disabled{}
+
+
+/* Стрілка */
+.slider .slick-arrow {
+    position: absolute;
+    top: 48%;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+}
+
+
+.slider .slick-arrow.slick-prev:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.slider .slick-arrow.slick-next:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+/* Стрілка вліво */
+
+.slider .slick-arrow.slick-prev{
+left: 115px;
+background: url('additions/Leftarrow.svg') 0 0 / 100% no-repeat;
+}
+
+
+/* Стрілка вправо */
+
+.slider .slick-arrow.slick-next{
+right: 115px;
+background: url('additions/Rightarrow.svg')0 0 / 100% no-repeat;
+
+}
+
+ 
+
+/* Точки (буліти) */
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+/* Активна точка */
+.slider .slick-dots li.slick-active button{
+ background-color: #FFFFFF;
+}
+
+.slider .slick-dots li button{ }
+
+/* Елемент точки */
+.slider .slick-dots button{
+     width: 15px;
+    height: 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0;
+}
+
+.slider .slick-dots button:hover{
+     background-color: rgba(255, 255, 255, 0.5);
+}

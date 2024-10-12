@@ -1,11 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io /apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io /favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io /favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="slick.css" />
+   <link rel="stylesheet" href="style.css" />
+    <title>Monticello</title>
+    <script
+      src="https://kit.fontawesome.com/39db0bdb95.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html"> <img src="logo/Logo.svg" alt="logo" /> </a>
+          </div>
+          <nav class="menu">
+            <ul>
+              <li>
+                <div class="menu-item">
+                  <div class="menu-ellipse"></div>
+                  <a href="#" onclick="scrollToSection('projects-container')" >ABOUT US</a>
+                </div>
+              </li>
+              <li>
+                <div class="menu-item">
+                  <div class="menu-ellipse"></div>
+                  <a href="#" onclick="scrollToSection('gallery-container')" >PROJECTS</a>
+                </div>
+              </li>
+              <li>
+                <div class="menu-item">
+                  <div class="menu-ellipse"></div>
+                  <a href="#" onclick="scrollToSection('news-container')" >NEWS</a>
+                </div>
+              </li>
+              <li>
+                <div class="menu-item">
+                  <div class="menu-ellipse"></div>
+                  <a href="#" onclick="scrollToSection('footer')">CONTACT</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="#"><img src="social/facebook.svg" alt="Facebook" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="social/twitter.svg" alt="Twitter" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="social/ instagram.svg" alt="Instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="heading-text">SIMPLE & MODERN</div>
+        <div class="subheading-text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</div>
+        <div class="arrow-container">
+          <img src="additions/arrow.svg" alt="Scroll Down" class="scroll-button" onclick="scrollToSection('projects-container')">
+        </div>
+        <div class="dots-container">
+          <div class="dot-menu active"></div>
+          <div class="dot-menu"></div>
+          <div class="dot-menu"></div>
+          <div class="dot-menu"></div>
+          <div class="dot-menu"></div>
+        </div>
+      </header>
+      <div class="projects-container">
+        <div class="projects-title">
+          <div class="projects-line"></div>
+          <div class="projects-text">WHAT WE DO</div>
+        </div>
+        <div class="projects-content">
+          <div data-aos="fade-down"> 
+          <div class="project-images">
+            <div class="image-1">
+              <img src="additions/Rectangle 3.svg" alt="Project1" />
+            </div>
+            <div class="image-2">
+              <img src="images/JoelFilipe.svg" alt="Project2" />
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up">
+          <div class="project-details">
+            <div class="project-detail-text">
+              <div class="detail-title-small">ONE WORLD</div>
+              <div class="detail-title-large">TRADE CENTER</div>
+              <div class="detail-description">
+                Increasing prosperity in our lives can be accomplished by having
+                the right frame of mind. The truth is, our thoughts are very
+                powerful.
+              </div>
+            </div>
+            <div class="more-details-button">
+              <button class="details-btn">MORE DETAILS</button>
+            </div>
+            <div class="location-info">
+              <img
+                src="additions/Location.svg"
+                alt="Location Icon"
+                class="location-icon"
+              />
+              <div class="location-text">
+                New York City, United States - 1776 feet
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in-down" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+        <div class="projects-content-2">
+          <div class="project-details">
+            <div class="project-detail-text">
+              <div class="detail-title-small">INTERNATIONAL</div>
+              <div class="detail-title-large">COMMERCE CENTRE</div>
+              <div class="detail-description">
+                Successful businesses have many things in common, today we’ll
+                look at the big ‘R’ of recognition and how a digital advertising
+                network may help.
+              </div>
+            </div>
+            <div class="more-details-button">
+              <button class="details-btn">MORE DETAILS</button>
+            </div>
+            <div class="location-info">
+              <img
+                src="additions/Location.svg"
+                alt="Location Icon"
+                class="location-icon"
+              />
+              <div class="location-text">Hong Kong - 1588 feet</div>
+            </div>
+          </div>
+          <div class="project-images">
+            <div  data-aos="fade-up" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+            <div class="image-1">
+              <img src="images/Rectangle32.svg" alt="Project 1" />
+            </div>
+            <div class="image-2">
+              <img src="images/BuildingBrown.svg" alt="Project 2" />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="news-container">
+      <div class="news-title">
+        <div class="news-line"></div>
+        <div class="news-text">LATEST NEWS</div>
+      </div>
+      
+      <div class="slider"> 
+        <span></span>
+      <div class="articles-container">
+        <div class="article">
+          <div class="article-image">
+            <img src="images/Image1.svg" alt="Article1" />
+          </div>
+          <div class="article-title">
+            SEE THE UNMATCHED BEAUTY OF THE GREAT.
+          </div>
+          <div class="article-description">
+            Free directories: directories are perfect for customers that are
+            searching for...
+          </div>
+          <div class="article-author">
+            <div class="author-image">
+              <img src="additions/author.svg" alt="Author1" />
+            </div>
+            <div class="author-info">
+              <div class="author-name">ALJA BRUN</div>
+              <div class="author-date">20 Jan 2020</div>
+            </div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="article-image">
+            <img src="images/Image2.svg" alt="Article 2" />
+          </div>
+          <div class="article-title">EFFECTIVE ADVERTISING POINTERS.</div>
+          <div class="article-description">
+            Having a home based business is a wonderful asset to your life...
+          </div>
+          <div class="article-author">
+            <div class="author-image">
+              <img src="additions/author2.svg" alt="author2" />
+            </div>
+            <div class="author-info">
+              <div class="author-name">DOMINIC FREEMAN</div>
+              <div class="author-date">13 Dec 2019</div>
+            </div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="article-image">
+            <img src="images/Image3.svg" alt="Article3" />
+          </div>
+          <div class="article-title">HYPNOTIZE YOURSELF INTO THE GHOST.</div>
+          <div class="article-description">
+            There are many things that are important to catalog design...
+          </div>
+          <div class="article-author">
+            <div class="author-image">
+              <img src="additions/author3.svg" alt="author3" />
+            </div>
+            <div class="author-info">
+              <div class="author-name">ALICE WARD</div>
+              <div class="author-date">30 Nov 2019</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+      </div>
+      <span></span>
+      <span></span>
+</div>
+</div>
+    <div class="gallery-container">
+      <div class="gallery-title">
+        <div class="gallery-line"></div>
+        <div class="gallery-text">GALLERY</div>
+      </div>
+      <div class="gallery-images">
+        <div class="gallery-image large-image">
+          <img src="images/scott-webb-176434 1.svg" alt="Gallery1" />
+        </div>
+        <div class="gallery-small-images">
+          <div class="gallery-image small-image-1">
+            <img src="images/photos-13323p6Bdc0uhr8Bq 1.svg" alt="Gallery2" />
+          </div>
+          <div class="gallery-image small-image-2">
+            <img src="images/fuse-brussels-169216 1.svg" alt="Gallery3" />
+          </div>
+        </div>
+        <div class="gallery-small-images">
+          <div class="gallery-image small-image-3">
+            <img src="images/echo-grid-156713 1.svg" alt="Gallery4" />
+          </div>
+          <div class="gallery-image small-image-4">
+            <img src="images/image-header.svg" alt="Gallery5" />
+          </div>
+        </div>
+      </div>
+      <div class="gallery-button">
+        <button class="see-more-btn">SEE MORE</button>
+      </div>
+      <div class="contact-container">
+        <div id="map" style="width:100%; height: 500px"></div>
+        <div class="contact-form-container">
+          <h2 class="contact-title">GET IN TOUCH</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <p>
+                <i class="fas fa-map-marker-alt custom-icon"></i> 91 Nolan
+                Extensions Suite 670
+              </p>
+              <p>
+                <i class="fas fa-phone-alt custom-icon"></i> +001 356-868-2454
+              </p>
+              <p>
+                <i class="fas fa-envelope custom-icon"></i>
+                montichello@service.com
+              </p>
+              <p>
+                <i class="fas fa-clock custom-icon"></i> From 07:05AM to 19:30PM
+              </p>
+            </div>
+            <div class="contact-form">
+              <div class="form-group">
+                <input type="text" class="input-field" value="Mollie Medina" />
+                <hr />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="input-field"
+                  placeholder="Email"
+                  required
+                />
+                <hr />
+              </div>
+              <button href="index.html" type="submit" class="submit-btn">
+                SUBMIT
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div data-aos="fade-up" data-aos-duration="500"
+    data-aos-easing="ease-in-out">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="logo/Logo.svg" alt="Logo" />
+          <p class="footer-text">Copyrights © 2020 Monticello</p>
+        </div>
+        <div class="socials-section">
+          <ul>
+            <li>
+              <a href="#"><img src="social/facebook.svg" alt="Facebook" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="social/twitter.svg" alt="Twitter" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="social/ instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="/js/news.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+      AOS.init();
+    </script>
+
+  </body>
 </html>
